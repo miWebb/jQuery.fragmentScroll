@@ -29,8 +29,8 @@
 			// Prevent default behavior
 			event.preventDefault();
 
-            // Variables
-            var fragment = this.href.substring(this.href.indexOf('#'));
+			// Variables
+			var fragment = this.href.substring(this.href.indexOf('#'));
 
 			// Scroll frame
 			$(options.frame).animate({
