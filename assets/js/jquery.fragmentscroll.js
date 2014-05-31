@@ -19,12 +19,14 @@
 		}, options);
 
 		// Init
-		fragmentScroll(this, options);
+		this.each(function() {
+			fragmentScroll(this, options);
+		});
 	}
 
 	function fragmentScroll(element, options) {
 		// On click event
-		element.find('[href^="#"]').on("click", function(event) {
+		$(element).find('[href^="#"]').on("click", function(event) {
 			// Prevent default behavior
 			event.preventDefault();
 
