@@ -6,6 +6,8 @@
  */
 
 (function($) {
+	"use strict";
+
 	$.fn.fragmentScroll = function(options) {
 		// Variables
 		var element = this;
