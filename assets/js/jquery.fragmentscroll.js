@@ -19,7 +19,7 @@
 		}, options);
 
 		// Init
-		this.each(function() {
+		return this.each(function() {
 			fragmentScroll(this, options);
 		});
 	}
