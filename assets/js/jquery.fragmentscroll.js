@@ -10,18 +10,20 @@
 
 	$.fn.fragmentScroll = function(options) {
 		// Options
-		var options = $.extend({
-			frame: 'html, body',
-			offset: 0,
-			speed: 1000,
-			easing: 'swing', // http://easings.net
-			showFragment: false
-		}, options);
+		var options = $.extend({}, $.fn.fragmentScroll.defaults, options);
 
 		// Init
 		return this.each(function() {
 			fragmentScroll(this, options);
 		});
+	}
+
+	$.fn.fragmentScroll.defaults = {
+		showFragment: false,
+		frame: 'html, body',
+		offset: 0,
+		speed: 1000,
+		easing: 'swing' // http://www.easings.net
 	}
 
 	function fragmentScroll(element, options) {
