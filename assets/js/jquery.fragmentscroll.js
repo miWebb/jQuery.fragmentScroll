@@ -9,9 +9,6 @@
 	"use strict";
 
 	$.fn.fragmentScroll = function(options) {
-		// Variables
-		var element = this;
-
 		// Options
 		var options = $.extend({
 			frame: 'html, body',
@@ -22,7 +19,7 @@
 		}, options);
 
 		// Init
-		fragmentScroll(element, options);
+		fragmentScroll(this, options);
 	}
 
 	function fragmentScroll(element, options) {
