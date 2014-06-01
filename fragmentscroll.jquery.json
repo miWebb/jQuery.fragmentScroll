@@ -3,16 +3,26 @@
 	"title": "jQuery.fragmentScroll",
 	"description": "The jQuery fragment scroll plugin replaces the default fragment link behavior with a scroll animation. The plugin only works for descendants of the given element(s).",
 	"keywords": [
+		"animate",
+		"animation",
 		"fragment",
-		"scroll"
+		"hash",
+		"jquery",
+		"responsive",
+		"scroll",
+		"scrollTo"
 	],
 	"version": "1.0.1",
 	"author": {
-		"name": "Michael Webbers"
+		"name": "miWebb",
+		"email": "info@miwebb.com",
+		"url": "https://www.miwebb.com"
 	},
 	"maintainers": [
 		{
-			"name": "Michael Webbers"
+			"name": "Michael Webbers",
+			"email": "m.webbers@miwebb.com",
+			"url": "https://www.miwebb.com"
 		}
 	],
 	"licenses": [
