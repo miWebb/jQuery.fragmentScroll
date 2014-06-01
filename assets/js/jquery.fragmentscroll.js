@@ -1,7 +1,7 @@
 /*!
- * jQuery Fragment Scroll v1.0.1
+ * jQuery Fragment Scroll v1.0.2
  *
- * Copyright 2014 miWebb and other contributors
+ * Copyright 2014 miWebb
  * Released under the MIT license
  */
 
