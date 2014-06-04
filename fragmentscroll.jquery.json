@@ -31,10 +31,11 @@
 			"url": "https://github.com/miWebb/jQuery.fragmentScroll/blob/master/LICENSE"
 		}
 	],
-	"bugs": "https://github.com/miWebb/jQuery.fragmentScroll/issues",
-	"homepage": "https://github.com/miWebb/jQuery.fragmentScroll",
+	"download": "https://github.com/miWebb/jQuery.fragmentScroll/releases",
+	"homepage": "https://miWebb.github.com/jQuery.fragmentScroll",
+	"demo": "https://miWebb.github.com/jQuery.fragmentScroll",
 	"docs": "https://github.com/miWebb/jQuery.fragmentScroll",
-	"download": "https://github.com/miWebb/jQuery.fragmentScroll/archive/master.zip",
+	"bugs": "https://github.com/miWebb/jQuery.fragmentScroll/issues",
 	"dependencies": {
 		"jquery": ">=1.7.0"
 	}
