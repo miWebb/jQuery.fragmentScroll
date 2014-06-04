@@ -5,8 +5,8 @@
  * Released under the MIT license
  */
 
-(function($) {
-	"use strict";
+(function($, window, undefined) {
+	'use strict';
 
 	$.fn.fragmentScroll = function(options) {
 		// Options
@@ -19,26 +19,42 @@
 	}
 
 	$.fn.fragmentScroll.defaults = {
+		// Options
 		showFragment: false,
 		frame: 'html, body',
 		offset: 0,
 		speed: 1000,
-		easing: 'swing' // http://www.easings.net
+		easing: 'swing', // http://www.easings.net
+
+		// Events
+		onStart: function() {},
+		onComplete: function() {}
 	}
 
 	function fragmentScroll(element, options) {
 		// On click event
-		$(element).find('[href^="#"]').on("click", function(event) {
+		$(element).find('[href^="#"]').on('click', function(event) {
 			// Prevent default behavior
 			event.preventDefault();
 
 			// Variables
 			var fragment = this.href.substring(this.href.indexOf('#'));
+			var frame = $(options.frame);
 
-			// Scroll frame
-			$(options.frame).animate({
+			// onStart
+			if (typeof(options.onStart) == "function") {
+				options.onStart.call();
+			}
+
+			// Animation
+			frame.animate({
 				scrollTop: $(fragment).offset().top - $(options.frame).offset().top - options.offset
 			}, options.speed, options.easing);
+
+			// onComplete
+			if (typeof(options.onStart) == "function") {
+				frame.promise().done(options.onComplete);
+			}
 
 			// Show fragment
 			if(options.showFragment) {
@@ -46,4 +62,4 @@
 			}
 		});
 	}
-})(jQuery);
+})(jQuery, window);
