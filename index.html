@@ -13,21 +13,32 @@
 		<script type="text/javascript">
 
 		$(window).load(function() {
-			$("html, body").fragmentScroll();
+			$("html").fragmentScroll();
 		});
 
 		</script>
 	</head>
 	<body>
-		<div id="page">
-			<div id="jquery">
-				<h1>jQuery <span>Fragment Scroll</span></h1>
-				<p>Check our <a href="https://github.com/miWebb/jQuery.stickyFooter">GitHub</a> for documentation.</p>
-				<p>The fragment scroll plugin will scroll the frame to the element with the id that's given in the fragment. <a href="#fragment">&lt;a href="#fragment"&gt;&lt;/a&gt;</a></p>
+		<div id="nav">
+			<div class="container">
+				<ul>
+					<li><a href="https://github.com/miWebb/jQuery.fragmentScroll/releases">Download</a></li>
+					<li><a href="https://github.com/miWebb/jQuery.fragmentScroll">Documentation</a></li>
+					<li><a href="https://github.com/miWebb">GitHub</a></li>
+					<li><a href="https://www.miwebb.com">miWebb</a></li>
+				</ul>
 			</div>
-			<div id="fragment">
-				<h2>Fragment</h2>
-				<p>The body height is set to 200% to make sure the page is long enough.</p>
+		</div>
+		<div id="page">
+			<div class="container">
+				<div id="jquery">
+					<h1>jQuery <span>Fragment Scroll</span></h1>
+					<p>The fragment scroll plugin will scroll the frame to the element with the id that's given in the fragment. <a href="#fragment">&lt;a href="#fragment">&lt;/a></a></p>
+				</div>
+				<div id="fragment">
+					<h2>Fragment</h2>
+					<p>The body height is set to 200% to make sure the page is long enough.</p>
+				</div>
 			</div>
 		</div>
 	</body>
