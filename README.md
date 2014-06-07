@@ -7,7 +7,8 @@ The jQuery fragment scroll plugin replaces the default fragment link behavior wi
 
 ### HTML
 
-<pre>&lt;html>
+<pre>&lt;!doctype html>
+&lt;html>
 	&lt;body>
 		&lt;div id="nav">
 			&lt;p>&lt;a href="#fragment">Content&lt;/a>&lt;/p>
@@ -21,12 +22,12 @@ The jQuery fragment scroll plugin replaces the default fragment link behavior wi
 ### Javascript
 
 <pre>$(window).load(function() {
-	$("html").fragmentScroll();
+	$('body').fragmentScroll();
 });</pre>
 
 ## Options
 
-<pre>$("html, body").fragmentScroll({
+<pre>$('body').fragmentScroll({
 	// Show fragment in URL.
 	showFragment: false,
 
