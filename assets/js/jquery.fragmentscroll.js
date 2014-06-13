@@ -48,7 +48,7 @@
 
 			// Animation
 			frame.animate({
-				scrollTop: $(fragment).offset().top - $(options.frame).offset().top - options.offset
+				scrollTop: $(fragment).offset().top + $(options.frame).offset().top - options.offset
 			}, options.speed, options.easing);
 
 			// onComplete
