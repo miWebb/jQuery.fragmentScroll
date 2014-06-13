@@ -19,12 +19,15 @@
 	}
 
 	$.fn.fragmentScroll.defaults = {
-		// Options
-		showFragment: false,
-		frame: 'html, body',
+		// Animation
+		frame: 'html, body', // body for webkit browsers
 		offset: 0,
-		speed: 1000,
+		speed: 'slow',
 		easing: 'swing', // http://www.easings.net
+
+		// Options
+		enableFragment: false,
+		enableAnimationChain: false,
 
 		// Events
 		onStart: function() {},
@@ -36,6 +39,11 @@
 		$(element).find('[href^="#"]').on('click', function(event) {
 			// Prevent default behavior
 			event.preventDefault();
+
+			// Check active
+			if ($(':animated').length && options.enableAnimationChain) {
+				return false;
+			}
 
 			// Variables
 			var fragment = this.href.substring(this.href.indexOf('#'));
@@ -57,7 +65,7 @@
 			}
 
 			// Show fragment
-			if(options.showFragment) {
+			if(options.enableFragment) {
 				window.location.hash = fragment;
 			}
 		});
