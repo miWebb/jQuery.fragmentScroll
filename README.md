@@ -28,9 +28,6 @@ The jQuery fragment scroll plugin replaces the default fragment link behavior wi
 ## Options
 
 <pre>$('body').fragmentScroll({
-	// Show fragment in URL.
-	showFragment: false,
-
 	// The frame that will scroll if the content overflows the elements box. (body for webkit browsers)
 	frame: 'html, body',
 
@@ -42,6 +39,12 @@ The jQuery fragment scroll plugin replaces the default fragment link behavior wi
 
 	// Animation effect. (http://www.easings.net)
 	easing: 'swing'
+
+	// Enable fragment in URL.
+	enableFragment: false,
+
+	// Enable animation chain. The browser will execute all the events in stead of ignoring event during animation.
+	enableAnimationChain: false,
 
 	// Call function on start.
 	onStart: function() {},
